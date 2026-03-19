@@ -1,11 +1,11 @@
 {
-  "name": "SoftSutra.online",
+  "name": "SoftSutra",
   "short_name": "SoftSutra",
-  "description": "Secure daily-use software ecosystem website for PCs and smartphones.",
+  "description": "SoftSutra apps with direct platform download buttons.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#081120",
-  "theme_color": "#081120",
+  "background_color": "#F9FAFB",
+  "theme_color": "#F9FAFB",
   "icons": [
     {
       "src": "/assets/img/favicon.svg",
