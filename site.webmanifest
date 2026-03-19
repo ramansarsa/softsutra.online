@@ -1,0 +1,16 @@
+{
+  "name": "SoftSutra.online",
+  "short_name": "SoftSutra",
+  "description": "Secure daily-use software ecosystem website for PCs and smartphones.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081120",
+  "theme_color": "#081120",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
