@@ -1,5 +1,20 @@
 const APPS = [
   {
+    name: "VoteGuard",
+    features: [
+      "Secure, transparent, and tamper-proof e-voting platform.",
+      "Blockchain-secured audit trail with end-to-end encryption.",
+      "Mobile-first design for institutions, colleges, and cooperatives."
+    ],
+    platforms: [
+      {
+        os: "web",
+        label: "Visit voteguard.softsutra.online",
+        url: "https://voteguard.softsutra.online/"
+      }
+    ]
+  },
+  {
     name: "SoftSutra PDF Reader and Converter",
     features: [
       "Focused PDF reading experience for desktop use.",
@@ -32,6 +47,8 @@ const APPS = [
 ];
 
 const PLATFORM_ICONS = {
+  web:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 100 20A10 10 0 0012 2zm-1 17.93V18a1 1 0 00-1-1H8A2 2 0 016 15v-1a2 2 0 00-2-2H2.07A8 8 0 0111 4.07V5a2 2 0 002 2h1a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v.93A8 8 0 0113 19.93z"/></svg>',
   windows:
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 4.75L11 3v8H3zm9 6.25h9V2l-9 1.5zM3 13h8v8.25L3 20zm9 0v8.75L21 23v-10z"/></svg>',
   android:
@@ -130,6 +147,11 @@ appList?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-download-url]");
 
   if (!button) {
+    return;
+  }
+
+  if (button.classList.contains("download-button--web")) {
+    window.open(button.dataset.downloadUrl, "_blank", "noopener,noreferrer");
     return;
   }
 
